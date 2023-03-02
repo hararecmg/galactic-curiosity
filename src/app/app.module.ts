@@ -17,6 +17,7 @@ import localeZh from '@angular/common/locales/zh';
 import localeRu from '@angular/common/locales/ru';
 import localePt from '@angular/common/locales/pt';
 import localeDe from '@angular/common/locales/de';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 // Español
 registerLocaleData(localeEs);
@@ -54,7 +55,8 @@ export function HttpLoaderFactory(http: HttpClient) {
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    NgbModule
   ],
   providers: [
     { 
