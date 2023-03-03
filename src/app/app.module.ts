@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { NgBootstrapModule } from './ng-bootstrap/ng-bootstrap.module';
+import { MaterialModule } from './material/material.module';
 import { ApiInterceptorService } from './shared/services/interceptors/api-interceptor.service';
 import { CacheInterceptorService } from './shared/services/interceptors/cache-interceptor.service';
 import { registerLocaleData } from '@angular/common';
@@ -50,6 +51,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     SharedModule,
     HttpClientModule,
     NgBootstrapModule,
+    MaterialModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
