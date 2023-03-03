@@ -7,6 +7,7 @@ import { HttpClientModule, HttpClient, HTTP_INTERCEPTORS } from '@angular/common
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
+import { NgBootstrapModule } from './ng-bootstrap/ng-bootstrap.module';
 import { ApiInterceptorService } from './shared/services/interceptors/api-interceptor.service';
 import { CacheInterceptorService } from './shared/services/interceptors/cache-interceptor.service';
 import { registerLocaleData } from '@angular/common';
@@ -17,7 +18,6 @@ import localeZh from '@angular/common/locales/zh';
 import localeRu from '@angular/common/locales/ru';
 import localePt from '@angular/common/locales/pt';
 import localeDe from '@angular/common/locales/de';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 // Español
 registerLocaleData(localeEs);
@@ -49,14 +49,14 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserAnimationsModule,
     SharedModule,
     HttpClientModule,
+    NgBootstrapModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    }),
-    NgbModule
+    })
   ],
   providers: [
     { 
