@@ -1,7 +1,19 @@
 @import "bootstrap/scss/mixins/banner";
 @include bsBanner("");
 @import "bootstrap/scss/functions";
-// Custom variables here
+// Custom variables:
+
+// Typography
+$font-family-sans-serif:      var(--text-font), sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace:       var(--text-font), monospace;
+$font-family-base:            var(--text-font);
+$font-family-code:            var(--secondary-font);
+$headings-font-family:        var(--primary-font);
+$display-font-family: var(--secondary-font);
+$input-btn-font-family:       var(--text-font);
+$btn-font-family:             var(--secondary-font);
+$input-font-family:                     var(--text-font);
+$form-select-font-family:           var(--text-font);
 
 
 @import "bootstrap/scss/variables";
