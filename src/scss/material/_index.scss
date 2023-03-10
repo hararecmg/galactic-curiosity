@@ -1,0 +1,33 @@
+@use '@angular/material' as mat;
+@use './custom/typography' as typ;
+@use './custom/color' as colors;
+
+
+$custom-typography: typ.$custom-typography-config;
+
+@include mat.core();
+
+$dark-app-theme: mat.define-dark-theme((
+  color: colors.$colors-dark-theme,
+  typography: $custom-typography,
+  density: 0,
+));
+
+$light-app-theme: mat.define-light-theme((
+  color: colors.$colors-light-theme,
+));
+
+@include mat.all-component-themes($dark-app-theme);
+
+:root {
+
+    &[data-theme="light"] {
+        @include mat.all-component-colors($light-app-theme);
+    }
+    
+    // &[data-theme="dark"] {
+    //     @include mat.all-component-themes($dark-app-theme);
+    // }
+    
+}
+

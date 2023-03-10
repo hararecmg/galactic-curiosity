@@ -1,0 +1,102 @@
+@use '@angular/material' as mat;
+@use '../../custom' as custom;
+
+// Custom Variables for Fonts
+$font-size-base: 1rem;
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+$font-weight-sm: 300;
+$font-weight-normal: 400;
+$headings-font-weight: 500;
+$line-height-base:            1.5;
+$headings-line-height:        1.2;
+
+
+// Custom Typography levels
+$headline-1-level: mat.define-typography-level(
+        $font-family: custom.$primary-font,
+        $font-weight: $headings-font-weight,
+        $font-size: $h1-font-size,
+        $line-height: $headings-line-height,
+        $letter-spacing: normal,
+    );
+
+$headline-2-level: $headline-1-level;
+$headline-3-level: $headline-1-level;
+$headline-4-level: $headline-1-level;
+$headline-5-level: $headline-1-level;
+
+$headline-6-level: mat.define-typography-level(
+        $font-family: custom.$secondary-font,
+        $font-weight: $headings-font-weight,
+        $font-size: $h2-font-size,
+        $line-height: $headings-line-height,
+        $letter-spacing: normal,
+    );
+    
+$subtitle-1-level: mat.define-typography-level(
+        $font-family: custom.$secondary-font,
+        $font-weight: $headings-font-weight,
+        $font-size: $h3-font-size,
+        $line-height: $headings-line-height,
+        $letter-spacing: normal,
+    );
+
+$subtitle-2-level: mat.define-typography-level(
+        $font-family: custom.$secondary-font,
+        $font-weight: $headings-font-weight,
+        $font-size: $h4-font-size,
+        $line-height: $headings-line-height,
+        $letter-spacing: normal,
+    );
+
+$body-1-level: mat.define-typography-level(
+    $font-family: custom.$text-font,
+    $font-weight: $font-weight-normal,
+    $font-size: $font-size-base,
+    $line-height: $line-height-base,
+    $letter-spacing: normal,
+); 
+
+$body-2-level: $body-1-level;
+
+
+$caption-level: mat.define-typography-level(
+    $font-family: custom.$text-font-italic,
+    $font-weight: $font-weight-sm,
+    $font-size: $font-size-base * 0.75,
+    $line-height: $line-height-base,
+    $letter-spacing: normal,
+);
+
+$button-level: mat.define-typography-level(
+    $font-family: custom.$text-font-italic,
+    $font-weight: $font-weight-normal,
+    $font-size: $font-size-base * 1.25,
+    $line-height: $line-height-base,
+    $letter-spacing: normal,
+);
+
+
+
+// Typography config
+$custom-typography-config: mat.define-typography-config(
+  $headline-1: $headline-1-level,
+  $headline-2: $headline-2-level,
+  $headline-3: $headline-3-level,
+  $headline-4: $headline-4-level,
+  $headline-5: $headline-5-level,
+  $headline-6: $headline-6-level,
+  $subtitle-1: $subtitle-1-level,
+  $subtitle-2: $subtitle-2-level,
+  $body-1: $body-1-level,
+  $body-2: $body-2-level,
+  $caption: $caption-level,
+  $button: $button-level,
+) !default;
+
+@include mat.typography-hierarchy($custom-typography-config);

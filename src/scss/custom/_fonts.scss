@@ -1,29 +1,25 @@
 @font-face {
     font-family: "Orbitron";
     src: url("../../assets/fonts/Orbitron/static/Orbitron-Bold.ttf") format("truetype");
-    font-weight: bold;
 }
 
 @font-face {
     font-family: "Raleway";
     src: url("../../assets/fonts/Raleway/static/Raleway-Light.ttf") format("truetype");
-    font-weight: lighter;
 }
 
 @font-face {
     font-family: "Nunito";
     src: url("../../assets/fonts/Nunito/static/Nunito-Regular.ttf") format("truetype");
-    font-weight: 400;
 }
 
-:root {
-    --primary-font: "Orbitron";
-    --secondary-font: "Raleway";
-    --text-font: "Nunito";
-    --line-height-base: 1.5;
+@font-face {
+    font-family: "Nunito-Italic";
+    src: url("../../assets/fonts/Nunito/static/Nunito-Italic.ttf") format("truetype");
+    font-style: italic;
 }
 
-html {
-    font-family: var(--text-font), sans-serif;
-    font-weight: 400;
-}
+$primary-font: "Orbitron" !default;
+$secondary-font: "Raleway" !default;
+$text-font: "Nunito" !default;
+$text-font-italic: "Nunito-Italic" !default;
