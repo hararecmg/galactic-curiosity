@@ -1,0 +1,116 @@
+@use '@angular/material' as mat;
+@use '../../../custom' as custom;
+
+// Custom colors
+$blue: map-get(mat.$light-blue-palette, 500);
+$indigo: map-get(mat.$indigo-palette, 500);
+$purple: map-get(mat.$purple-palette, 500);
+$pink: map-get(mat.$pink-palette, 500);
+$red: map-get(mat.$purple-palette, 500);
+$orange: map-get(mat.$deep-orange-palette, 500);
+$yellow: map-get(mat.$yellow-palette, 500);
+$green: map-get(mat.$light-green-palette, 500);
+$teal: map-get(mat.$teal-palette, 500);
+$cyan: map-get(mat.$cyan-palette, 500);
+$gray-600: #6c757d;
+$gray-800: #343a40;
+$gray-900: #212529;
+$white:    #fff;
+$black:    #000;
+$gray-100: #f8f9fa;
+$blue-600: shade-color($blue, 20%);
+$orange-600: shade-color($orange, 20%);
+
+$colors: (
+    "blue": $blue,
+    "indigo": $indigo,
+    "purple": $purple,
+    "pink": $pink,
+    "red": $red,
+    "orange": $orange,
+    "yellow": $yellow,
+    "green": $green,
+    "teal": $teal,
+    "cyan": $cyan,
+    "black": $black,
+    "white": $white,
+    "gray": $gray-600,
+    "gray-dark": $gray-800
+);
+
+// @each $color, $value in $colors {
+//     @if $color !="gray" and $color !="gray-dark" and $color !="white" {
+//         #{$color}-100: tint-color($value, 80%);
+//         #{$color}-200: tint-color($value, 60%);
+//         #{$color}-300: tint-color($value, 40%);
+//         #{$color}-400: tint-color($value, 20%);
+//         #{$color}-500: $value;
+//         #{$color}-600: shade-color($value, 20%);
+//         #{$color}-700: shade-color($value, 40%);
+//         #{$color}-800: shade-color($value, 60%);
+//         #{$color}-900: shade-color($value, 80%);
+//     }
+// }
+
+$primary:       $blue;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-900;
+$body-bg:                   $white;
+$body-color:                $gray-900;
+$component-active-color:      $white;
+$component-active-bg:         $primary;
+$headings-color:              #fff;
+
+:root {
+    &[data-theme="light"] {
+        
+        $primary:       $teal;
+        $secondary:     $green;
+        $success:       $orange;
+        $body-bg:                   $white;
+        $body-color:                $gray-900;
+        $component-active-color:      $white;
+        $headings-color:              $white;
+    }
+    &[data-theme="dark"] {
+        
+        $primary:       $blue;
+        $secondary:     $blue-600;
+        $success:       $orange-600;
+        $body-bg:                   $black;
+        $body-color:                $gray-100;
+        $component-active-color:      $black;
+        $headings-color:              $black;
+    }
+}
+
+
+// Custom Typography
+$font-family-sans-serif:      custom.$text-font, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace:       custom.$text-font-italic, monospace;
+$font-family-base:            custom.$text-font;
+$font-family-code:            custom.$secondary-font;
+$headings-font-family:        custom.$primary-font;
+$display-font-family: custom.$secondary-font;
+$input-btn-font-family:       custom.$text-font;
+$btn-font-family:             custom.$secondary-font;
+$input-font-family:                     custom.$text-font;
+$form-select-font-family:           custom.$text-font;
+
+// Important utilities
+$enable-important-utilities:  false;
+
+// Custom breakpoints (These breakpoints match those of @angular/cdk)
+$grid-breakpoints: (
+  xs: 0,
+  sm: 600px,
+  md: 960px,
+  lg: 1280px,
+  xl: 1920px,
+  xxl: 2000px
+);

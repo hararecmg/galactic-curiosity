@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "Orbitron";
+    src: url("../../assets/fonts/Orbitron/static/Orbitron-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../../assets/fonts/Raleway/static/Raleway-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Nunito";
+    src: url("../../assets/fonts/Nunito/static/Nunito-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Nunito-Italic";
+    src: url("../../assets/fonts/Nunito/static/Nunito-Italic.ttf") format("truetype");
+    font-style: italic;
+}
+
+$primary-font: "Orbitron" !default;
+$secondary-font: "Raleway" !default;
+$text-font: "Nunito" !default;
+$text-font-italic: "Nunito-Italic" !default;
