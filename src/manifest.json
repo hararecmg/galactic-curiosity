@@ -1,7 +1,7 @@
 {
-  "name": "hararecmg",
-  "short_name": "hararecmg",
-  "description": "¡Hola! Mi nombre es Hararec M.G y te doy la bienvenida. Aquí verás mis proyectos como desarrollador y matemático.",
+  "name": "galactic-curiosity",
+  "short_name": "galactic-curiosity",
+  "description": "Conoce las últimas noticias sobre el espacio y la ciencia ¡Prepárate para explorar el universo 🌌!",
   "start_url": "/",
   "display": "standalone",
   "theme_color": "#8B008B",

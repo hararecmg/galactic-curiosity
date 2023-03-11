@@ -1,4 +1,4 @@
-/* hararecmg - https://hararecmg.com */
+/* hararecmg - https://hararecmg.github.io/galactic-curiosity/ */
 
 /* TEAM */
 
@@ -7,8 +7,8 @@ Location: CDMX, México
 
 /* WEBSITE */
 
-Programmed in Angular v15.1.0
-Components library: PrimeNg
+Programmed in Angular v15.2.1
+Components library: ng-bootstrap, Angular Material
 Icons library: Bootstrap-icons
 
 /* RESOURCES */
@@ -17,11 +17,22 @@ Icons library: Bootstrap-icons
 
 /* INSPIRATION */
 
-- Design: https://www.youtube.com/@OnlineTutorialsYT
-- https://jonmircha.com/
-- https://davidhellmann.com/
+- https://www.nasa.gov/
+- https://www.spacex.com/
+- https://www.blueorigin.com/
+- https://www.virgingalactic.com/
+- https://www.relativityspace.com/
+- https://www.rocketlabusa.com/
+- https://www.sierraspace.com/
+- https://www.space.com/
+- https://spacenews.com/
+- https://www.universetoday.com/
+- https://www.planetary.org/
+- https://www.nasaspaceflight.com/
+- https://spaceflightnow.com/
+- https://www.thespacereview.com/
 
 /* CONTACT */
 
-Email: hararecmedina@gmail.com
+Email: matematicamatematica1729@gmail.com
 Twitter: @HararecMG
